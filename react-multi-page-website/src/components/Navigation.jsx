@@ -1,13 +1,14 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import "./Navigation.css";
 
 function Navigation() {
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand navbar-dark bg-dark">
+      <nav className="navbar navbar-expand">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
-            React Multi-Page Website
+            Embers of the Phoenix
           </NavLink>
           <div>
             <ul className="navbar-nav ml-auto">
@@ -29,7 +30,7 @@ function Navigation() {
               </li>
               <li className="nav-item">
                 <NavLink className="nav-link" to="/blog">
-                  Blog
+                  Menus
                 </NavLink>
               </li>
             </ul>

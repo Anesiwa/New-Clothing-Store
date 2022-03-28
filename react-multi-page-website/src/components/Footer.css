@@ -1,0 +1,25 @@
+Footer {
+  background-color: black;
+}
+
+.footer-title {
+  text-decoration: underline;
+  text-align: left;
+}
+.Sitemap {
+  list-style: none;
+  margin: 0;
+  text-align: left;
+  padding: 0;
+}
+.Sitemap a {
+  color: red;
+}
+
+.footer-main-info {
+  text-align: center;
+}
+.copyright-details {
+  text-align: center;
+  color: blue;
+}
