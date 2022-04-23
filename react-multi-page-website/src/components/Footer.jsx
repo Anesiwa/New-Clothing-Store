@@ -4,7 +4,7 @@ import "./Footer.css";
 export default function Footer() {
   return (
     <div className="footer">
-      <footer className="py-5 fixed-bottom">
+      <footer>
         <div className="container">
           <div>
             <div className="row text-left">

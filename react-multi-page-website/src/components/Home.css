@@ -1,0 +1,29 @@
+.container {
+  padding: 10px;
+}
+
+p {
+  font-weight: bolder;
+  padding: 5px;
+}
+section {
+  padding: 5px;
+}
+.restaurant-synopsis {
+  margin: 10px 0;
+}
+
+.col-4,
+.col-2 {
+  margin: 0 auto;
+  text-align: center;
+}
+.restaurant-photos {
+  border-radius: 5px;
+}
+.phoenix-synopsis {
+  margin: 50px;
+}
+.happy-hour {
+  background-color: #dc3545;
+}
