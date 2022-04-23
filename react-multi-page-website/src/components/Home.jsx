@@ -190,7 +190,13 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <div className="divider"></div>
+        <div
+          style={{
+            borderTop: "2px solid #dc3545 ",
+            marginLeft: 20,
+            marginRight: 20,
+          }}
+        ></div>
         <section className="building-info">
           <div>
             <h3>Our Building</h3>

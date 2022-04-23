@@ -9,7 +9,8 @@ p {
 section {
   padding: 5px;
 }
-.restaurant-synopsis {
+.restaurant-synopsis,
+.builder-info {
   margin: 10px 0;
 }
 
