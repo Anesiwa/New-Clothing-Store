@@ -8,7 +8,7 @@ export default function Home() {
         <div>
           <img
             className="img-fluid rounded mb-4"
-            src="src/images/logo_w_name.png"
+            src=".src/images/logo_w_name.png"
             alt="The Phoenix of Davenport"
           />
         </div>
