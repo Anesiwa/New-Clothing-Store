@@ -59,22 +59,22 @@ export default function Footer() {
                       <a href="./">About</a>
                     </li>
                     <li>
-                      <a href="./">Specials</a>
+                      <a href="./">Dinner Menus</a>
                     </li>
                     <li>
-                      <a href="./">Dinner Menu</a>
+                      <a href="./">Homemade Cheesecake Menu</a>
+                    </li>
+                    <li>
+                      <a href="./">Handcrafted Martini Menu</a>
+                    </li>
+                    <li>
+                      <a href="./">Summer Cocktails & Drinks</a>
                     </li>
                     <li>
                       <a href="./">Wine Menu</a>
                     </li>
                     <li>
-                      <a href="./">Martini Menu</a>
-                    </li>
-                    <li>
-                      <a href="./">Cocktails</a>
-                    </li>
-                    <li>
-                      <a href="./">Private Parties & Events</a>
+                      <a href="./">Banquet Halls & Private Parties</a>
                     </li>
                     <li>
                       <a href="./">Contact Us</a>
