@@ -42,7 +42,7 @@ export default function Footer() {
                   <a
                     href="mailto:thephoenixofdavenport@gmail.com"
                     target="_blank"
-                    rel="noreferrer"
+                    rel="noopener noreferrer"
                   >
                     thephoenixofdavenport@gmail.com
                   </a>
