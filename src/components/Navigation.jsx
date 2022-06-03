@@ -2,11 +2,11 @@ import React from "react";
 import { NavLink } from "react-router-dom";
 import "./Navigation.css";
 
-function Navigation() {
+export default function Navigation() {
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand">
-        <div className="container">
+      <div className="container">
+        <nav className="navbar navbar-expand">
           <NavLink className="navbar-brand" to="/">
             Embers of the Phoenix
           </NavLink>
@@ -35,10 +35,9 @@ function Navigation() {
               </li>
             </ul>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
+      <div id="divider-7"></div>
     </div>
   );
 }
-
-export default Navigation;

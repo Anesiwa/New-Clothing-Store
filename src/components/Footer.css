@@ -1,25 +1,61 @@
 Footer {
   background-color: black;
+  padding: 15px;
 }
 
 .footer-title {
-  text-decoration: underline;
   text-align: left;
+  color: #ea7d3a;
+}
+.footer-details,
+.Sitemap a {
+  color: white;
 }
 .Sitemap {
   list-style: none;
   margin: 0;
   text-align: left;
-  padding: 0;
 }
-.Sitemap a {
-  color: red;
-}
-
 .footer-main-info {
   text-align: center;
 }
 .copyright-details {
   text-align: center;
   color: blue;
+}
+#email-link {
+  font-size: smaller;
+}
+#divider-7 {
+  display: flex;
+  position: relative;
+  height: 15px;
+  margin: 0 0;
+  background: red;
+}
+#fc-4-underline-1 {
+  background: #ea7d3a;
+  position: relative;
+  height: 4px;
+  width: 170px;
+  float: left;
+  margin: 0 0;
+}
+@media (min-width: 576) {
+  Footer {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+  }
+  #fc-4-underline-1 {
+    background: #ea7d3a;
+    position: relative;
+    height: 2px;
+    width: 160px;
+    float: left;
+    margin: 0 0;
+  }
+  .footer-details {
+    font-size: smaller;
+  }
 }

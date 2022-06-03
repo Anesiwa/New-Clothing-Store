@@ -1,7 +1,17 @@
 .navigation {
   background-color: black;
 }
+.navbar {
+  justify-content: flex;
+}
 .nav-link,
 .navbar-brand {
   color: red;
+}
+#divider-7 {
+  display: flex;
+  position: relative;
+  height: 5px;
+  margin: 0;
+  background: red;
 }

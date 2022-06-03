@@ -76,15 +76,11 @@ function Posts() {
               />
             </div>
             <div className="col-lg-5">
-              <h1 className="font-weight-light">Summer Cocktails & Drinks</h1>
+              <h1 className="font-weight-light">Cocktails & Drinks</h1>
               <p>
                 Starting May 1st, our mixology team will begin crafting our new
                 Summer drink menu! We have hand-crafted a new variety of
-                cocktail options for all above 21 to enjoy! Lorem Ipsum is
-                simply dummy text of the printing and typesetting industry.
-                Lorem Ipsum has been the industry's standard dummy text ever
-                since the 1500s, when an unknown printer took a galley of type
-                and scrambled it to make a type specimen book.
+                cocktail options for all above 21 to enjoy!
               </p>
             </div>
           </div>
