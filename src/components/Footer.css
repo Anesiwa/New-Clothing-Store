@@ -19,9 +19,10 @@ Footer {
 .footer-main-info {
   text-align: center;
 }
-.copyright-details {
+.copyright-details,
+.footer a {
   text-align: center;
-  color: blue;
+  color: #ea7d3a;
 }
 #email-link {
   font-size: smaller;
@@ -33,7 +34,7 @@ Footer {
   margin: 0 0;
   background: red;
 }
-#fc-4-underline-1 {
+#divider-1 {
   background: #ea7d3a;
   position: relative;
   height: 4px;
@@ -41,21 +42,33 @@ Footer {
   float: left;
   margin: 0 0;
 }
-@media (min-width: 576) {
+.social-links a {
+  color: red;
+  line-height: 2;
+}
+@media (max-width: 576px) {
   Footer {
     background-color: black;
     padding: 15px;
+  }
+  .footer-title,
+  .footer-details,
+  .Sitemap {
     text-align: center;
   }
-  #fc-4-underline-1 {
-    background: #ea7d3a;
+
+  #divider-1 {
+    display: flex;
     position: relative;
-    height: 2px;
-    width: 160px;
-    float: left;
+    height: 4px;
     margin: 0 0;
+    background: #ea7d3a;
   }
   .footer-details {
-    font-size: smaller;
+    margin-bottom: 8px;
+  }
+  .footer-main-info {
+    font-size: 11px;
+    padding: 15px;
   }
 }
