@@ -1,13 +1,51 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+:root {
+  --background: black;
+  --primary-color: red;
+  --secondary-color: #ea7d3a;
+  --tertiary-color: white;
+  --text-color: black;
+  --nav-size: 70px;
+  --border: 5px solid red;
+  --border-radius: 8px;
+  --speed: 500ms;
+  --display: flex;
+}
+
+.nav-item {
+  width: calc(var(--nav-size) * 1.2);
+  display: var(--display);
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-button {
+  --button-size: calc(var(var(--button-size) * 0.8));
+  width: var(--button-size);
+  height: var(--button-size);
+  background-color: var(--secondary-color);
+  border-radius: 50%;
+  padding: 5px;
+  margin: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: filter 300ms;
+  color: var(--tertiary-color);
+}
+
+.nav-button:hover {
+  filter: brightness(1.2);
 }
