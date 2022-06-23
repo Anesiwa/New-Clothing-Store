@@ -1,12 +1,11 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navigation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import { CSSTransition } from "react-transition-group";
 
 export default function Navigation() {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   function DropdownMenu() {
     const [activeMenu, setActiveMenu] = useState("main");
@@ -41,16 +40,15 @@ export default function Navigation() {
         <CSSTransition
           in={activeMenu === "main"}
           timeout={500}
-          classNames="menu-primary"
+          className="menu-primary"
           unmountOnExit
           onEnter={calcHeight}
         >
-          <div className="menu">
-            <DropdownItem>Menus</DropdownItem>
+          <div className="dropdownMenu">
             <DropdownItem
               leftIcon={<FontAwesomeIcon icon="fa-solid fa-utensils" />}
               rightIcon={<FontAwesomeIcon icon="fa-solid fa-chevron-right" />}
-              goToMenu="menus"
+              goToMenu="allMenus"
             >
               Menus
             </DropdownItem>
@@ -65,18 +63,18 @@ export default function Navigation() {
         </CSSTransition>
 
         <CSSTransition
-          in={activeMenu === "menus"}
+          in={activeMenu === "allMenus"}
           timeout={500}
-          classNames="menu-secondary"
+          className="menu-secondary"
           unmountOnExit
           onEnter={calcHeight}
         >
-          <div className="menu">
+          <div className="menus">
             <DropdownItem
               goToMenu="main"
               leftIcon={<FontAwesomeIcon icon="fa-solid fa-chevron-left" />}
             >
-              <h2>Menus</h2>
+              <h2>All Menus</h2>
             </DropdownItem>
             <DropdownItem
               leftIcon={<FontAwesomeIcon icon="fa-solid fa-utensils" />}
@@ -109,7 +107,7 @@ export default function Navigation() {
         <CSSTransition
           in={activeMenu === "special-events"}
           timeout={500}
-          classNames="menu-secondary"
+          className="menu-secondary"
           unmountOnExit
           onEnter={calcHeight}
         >
@@ -158,14 +156,19 @@ export default function Navigation() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink
-              className="nav-button"
-              to="/blog"
-              onClick={() => setOpen(!open)}
-            >
+            <NavLink className="nav-button" to="/blog">
               Menus
             </NavLink>
-            <DropdownMenu></DropdownMenu>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              className="nav-button"
+              to="./blog"
+              onClick={() => setOpen(!open)}
+            >
+              More
+              <DropdownMenu></DropdownMenu>
+            </NavLink>
           </li>
         </ul>
       </nav>
