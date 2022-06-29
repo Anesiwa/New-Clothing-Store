@@ -1,0 +1,23 @@
+.Hero {
+  text-align: center;
+}
+.logo {
+  display: inline-block;
+  width: fit-content;
+}
+
+.Hero p {
+  text-align: right;
+  padding: 0;
+}
+.react-player {
+  position: relative;
+}
+
+@media (max-width: 576px) {
+  .Hero p {
+    font-size: 14px;
+    text-align: right;
+    padding: 0;
+  }
+}

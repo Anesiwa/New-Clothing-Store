@@ -12,11 +12,13 @@ import {
   Blog,
   Posts,
   Post,
+  Hero,
 } from "./components";
 
 ReactDOM.render(
   <Router>
     <Navigation />
+    <Hero />
     <div className="container">
       <Routes>
         <Route path="/" element={<Home />} />

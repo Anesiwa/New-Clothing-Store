@@ -5,13 +5,6 @@ export default function Home() {
   return (
     <div className="home">
       <div className="container">
-        <div>
-          <img
-            className="img-fluid rounded mb-4"
-            src="./images/logo_w_name.png"
-            alt="The Phoenix of Davenport"
-          />
-        </div>
         <div className="restaurant-synopsis text-center mt-5 mb-5">
           <h1 className="mb-3">
             We specialize in robust, gourmet food with an extensive wine and
