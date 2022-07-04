@@ -1,5 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import "./Posts.css";
+import scampi from "./blog-photos/scampi_pasta.JPEG";
+import peachMarg from "./blog-photos/peachMarg.jpeg";
+import cheesecake from "./blog-photos/cheesecake.JPEG";
+import martini from "./blog-photos/saltedCarmelMartini.jpeg";
 
 function Posts() {
   return (
@@ -10,8 +15,10 @@ function Posts() {
             <div className="col-lg-7">
               <img
                 className="img-fluid rounded mb-4 mb-lg-0"
-                src="http://placehold.it/900x400"
-                alt=""
+                src={scampi}
+                alt="Shrimp Scampi Alfredo"
+                width="500"
+                height="400"
               />
             </div>
             <div className="col-lg-5">
@@ -30,8 +37,10 @@ function Posts() {
             <div className="col-lg-7">
               <img
                 className="img-fluid rounded mb-4 mb-lg-0"
-                src="http://placehold.it/900x400"
-                alt=""
+                src={cheesecake}
+                alt="Homemade Cheesecake"
+                width="500"
+                height="400"
               />
             </div>
             <div className="col-lg-5">
@@ -51,8 +60,10 @@ function Posts() {
             <div className="col-lg-7">
               <img
                 className="img-fluid rounded mb-4 mb-lg-0"
-                src="http://placehold.it/900x400"
-                alt=""
+                src={martini}
+                alt="Salted Carmel Martini"
+                width="500"
+                height="400"
               />
             </div>
             <div className="col-lg-5">
@@ -71,8 +82,10 @@ function Posts() {
             <div className="col-lg-7">
               <img
                 className="img-fluid rounded mb-4 mb-lg-0"
-                src="http://placehold.it/900x400"
-                alt=""
+                src={peachMarg}
+                alt="Spicy Peach Margarita"
+                width="500"
+                height="200"
               />
             </div>
             <div className="col-lg-5">
@@ -92,32 +105,12 @@ function Posts() {
                 className="img-fluid rounded mb-4 mb-lg-0"
                 src="http://placehold.it/900x400"
                 alt=""
+                width="500"
+                height="400"
               />
             </div>
             <div className="col-lg-5">
               <h1 className="font-weight-light">Wine Menu</h1>
-              <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s, when an unknown printer took a galley
-                of type and scrambled it to make a type specimen book.
-              </p>
-            </div>
-          </div>
-        </Link>
-        <Link to="/blog/this-is-a-post-title-6">
-          <div className="row align-items-center my-5">
-            <div className="col-lg-7">
-              <img
-                className="img-fluid rounded mb-4 mb-lg-0"
-                src="http://placehold.it/900x400"
-                alt=""
-              />
-            </div>
-            <div className="col-lg-5">
-              <h1 className="font-weight-light">
-                Banquet Halls and Private Parties
-              </h1>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy

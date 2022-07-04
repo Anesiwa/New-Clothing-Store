@@ -1,0 +1,14 @@
+@media (max-width: 576px) {
+  img {
+    text-align: center;
+    display: inline-block;
+  }
+  h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  p {
+    font-size: smaller;
+    text-align: center;
+  }
+}
