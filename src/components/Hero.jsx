@@ -5,7 +5,7 @@ export default function Hero() {
   return (
     <div className="container">
       <div className="Hero">
-        <p>Call Today: 563-323-2345</p>
+        <p className="float-right">Call Today: 563-323-2345</p>
         <img
           className="img-fluid"
           src={logo}

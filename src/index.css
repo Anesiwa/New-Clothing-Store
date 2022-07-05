@@ -27,7 +27,7 @@ code {
 }
 
 .nav-item {
-  width: calc(var(--nav-size) * 1.2);
+  width: calc(var(--nav-size) * 1.1);
   display: var(--display);
   align-items: center;
   justify-content: center;
