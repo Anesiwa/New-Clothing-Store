@@ -13,7 +13,7 @@ import {
   Posts,
   Post,
   Hero,
-  WineDinner,
+  SpecialEvents,
 } from "./components";
 
 ReactDOM.render(
@@ -29,7 +29,7 @@ ReactDOM.render(
           <Route path="" element={<Posts />} />
           <Route path=":postSlug" element={<Post />} />
         </Route>
-        <Route path="/WineDinner" element={<WineDinner />} />
+        <Route path="/SpecialEvents" element={<SpecialEvents />} />
       </Routes>
     </div>
     <Footer />

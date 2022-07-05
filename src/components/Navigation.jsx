@@ -161,6 +161,11 @@ export default function Navigation() {
             </NavLink>
           </li>
           <li className="nav-item">
+            <NavLink className="nav-button" to="./SpecialEvents">
+              Special Events
+            </NavLink>
+          </li>
+          <li className="nav-item">
             <NavLink
               className="nav-button"
               to="./blog"

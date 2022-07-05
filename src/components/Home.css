@@ -1,7 +1,9 @@
 .container {
   padding: 10px;
 }
-
+.home h1 {
+  font-size: 50px;
+}
 p {
   font-weight: bolder;
   padding: 5px;

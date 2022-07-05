@@ -1,0 +1,40 @@
+.container {
+  padding: 10px;
+}
+.Special-Events {
+  padding: 10px;
+}
+h1 {
+  font-size: 80px;
+}
+.SpecialEvents row {
+  margin: 0;
+}
+.wine-dinner-contact,
+h3 {
+  margin: 0 auto;
+}
+@media (max-width: 576px) {
+  h1 {
+    font-size: 55px;
+  }
+  h2 {
+    font-size: 35px;
+    text-align: center;
+  }
+
+  h3,
+  a {
+    font-size: 20px;
+  }
+  p {
+    font-size: smaller;
+  }
+  .img {
+    width: 300;
+    height: 180;
+  }
+  .claudiaEmail {
+    text-align: center;
+  }
+}
