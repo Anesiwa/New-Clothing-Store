@@ -1,15 +1,22 @@
 Footer {
-  background-color: black;
+  background-color: var(--background);
   padding: 15px;
 }
 
+h4 {
+  text-align: center;
+  color: var(--primary-color);
+}
 .footer-title {
   text-align: left;
-  color: #ea7d3a;
+  color: var(--secondary-color);
+}
+.footer-service-header {
+  color: var(--primary-color);
 }
 .footer-details,
 .Sitemap a {
-  color: white;
+  color: var(--tertiary-color);
 }
 .Sitemap {
   list-style: none;
@@ -22,20 +29,23 @@ Footer {
 .copyright-details,
 .footer a {
   text-align: center;
-  color: #ea7d3a;
+  color: var(--secondary-color);
 }
 #email-link {
   font-size: smaller;
 }
+.creator {
+  color: var(--primary-color);
+}
 #divider-7 {
-  display: flex;
+  display: var(--display);
   position: relative;
   height: 15px;
   margin: 0 0;
-  background: red;
+  color: var(--primary-color);
 }
 #divider-1 {
-  background: #ea7d3a;
+  color: var(--secondary-color);
   position: relative;
   height: 4px;
   width: 170px;
@@ -43,12 +53,12 @@ Footer {
   margin: 0 0;
 }
 .social-links a {
-  color: red;
+  color: var(--primary-color);
   line-height: 2;
 }
 @media (max-width: 576px) {
   Footer {
-    background-color: black;
+    background-color: var(--background);
     padding: 15px;
   }
   .footer-title,
@@ -56,13 +66,9 @@ Footer {
   .Sitemap {
     text-align: center;
   }
-
-  #divider-1 {
-    display: flex;
-    position: relative;
-    height: 4px;
-    margin: 0 0;
-    background: #ea7d3a;
+  .footer-service-header {
+    color: var(--primary-color);
+    text-align: center;
   }
   .footer-details {
     margin-bottom: 8px;
@@ -70,5 +76,17 @@ Footer {
   .footer-main-info {
     font-size: 11px;
     padding: 15px;
+  }
+
+  .footer img {
+    margin: 0 auto;
+    display: var(--display);
+  }
+  #email-link {
+    font-size: smaller;
+  }
+  .creator {
+    font-size: 16px;
+    color: var(--primary-color);
   }
 }
