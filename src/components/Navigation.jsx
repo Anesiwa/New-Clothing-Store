@@ -20,7 +20,7 @@ export default function Navigation() {
     function DropdownItem(props) {
       return (
         <a
-          href="#"
+          href="/"
           className="menu-item"
           onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
         >
@@ -177,7 +177,6 @@ export default function Navigation() {
           </li>
         </ul>
       </nav>
-      <div id="divider-7"></div>
     </div>
   );
 }

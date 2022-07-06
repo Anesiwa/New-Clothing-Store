@@ -5,22 +5,19 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 export default function Footer() {
   return (
     <div>
-      <div id="divider-7"></div>
       <footer>
         <div className="footer">
           <div className="row text-left footer-row">
             <div className="col-sm-3">
               <h4 className="footer-title">Dinner Hours</h4>
-              <div id="divider-1"></div>
               <br />
               <div className="footer-details">
                 Monday-Thursday 3pm to 9:45pm
                 <br />
                 Friday & Saturday 3pm to 9:30pm
               </div>
-
+              <br />
               <h4 className="footer-title">Bar Hours</h4>
-              <div id="divider-1"></div>
               <br />
               <div className="footer-details">
                 Monday-Thursday 3pm to 9:30pm
@@ -30,7 +27,6 @@ export default function Footer() {
             </div>
             <div className="col-sm-3">
               <h4 className="footer-title">Location</h4>
-              <div id="divider-1"></div>
               <br />
               <div className="footer-details">
                 111 W 2nd St.
@@ -40,7 +36,6 @@ export default function Footer() {
             </div>
             <div className="col-sm-3">
               <h4 className="footer-title">Contact</h4>
-              <div id="divider-1"></div>
               <br />
               <div className="footer-details">
                 Embers of the Phoenix Restaurant & Martini Bar
@@ -94,7 +89,6 @@ export default function Footer() {
             </div>
             <div className="col-sm-3 Sitemap">
               <h4 className="footer-title">Sitemap</h4>
-              <div id="divider-1"></div>
               <br />
               <div>
                 <ul>
@@ -139,7 +133,6 @@ export default function Footer() {
           </div>
         </div>
       </footer>
-      <div id="divider-7"></div>
     </div>
   );
 }

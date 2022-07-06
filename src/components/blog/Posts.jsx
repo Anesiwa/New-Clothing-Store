@@ -10,7 +10,7 @@ function Posts() {
   return (
     <div className="home">
       <div className="container">
-        <Link to="/blog/this-is-a-post-title">
+        <Link to="/blog/dinnermenu">
           <div className="row align-items-center my-5">
             <div className="col-lg-7">
               <img
@@ -32,7 +32,7 @@ function Posts() {
             </div>
           </div>
         </Link>
-        <Link to="/blog/this-is-a-post-title-2">
+        <Link to="/blog/cheesecake">
           <div className="row align-items-center my-5">
             <div className="col-lg-7">
               <img
