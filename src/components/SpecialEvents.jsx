@@ -74,7 +74,7 @@ export default function SpecialEvents() {
                 <img
                   className="img-fluid rounded mb-4 mb-lg-0"
                   src={wineDinner}
-                  alt="Wine Dinner Photo"
+                  alt="Wine Dinner"
                   width="400"
                   height="280"
                 />
