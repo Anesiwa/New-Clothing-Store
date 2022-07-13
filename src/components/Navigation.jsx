@@ -3,6 +3,7 @@ import { NavLink } from "react-router-dom";
 import "./Navigation.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { CSSTransition } from "react-transition-group";
+import logo from "./images/phoenix_bird_blk.png";
 
 export default function Navigation() {
   const [open, setOpen] = useState(true);
@@ -20,7 +21,7 @@ export default function Navigation() {
     function DropdownItem(props) {
       return (
         <a
-          href="/"
+          href="#"
           className="menu-item"
           onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
         >
@@ -138,6 +139,14 @@ export default function Navigation() {
   return (
     <div>
       <nav className="navbar navigation">
+        <span className="d-flex float left">
+          <img
+            className="img-fluid"
+            src={logo}
+            alt="Embers of the Phoenix logo"
+            width="60"
+          />
+        </span>
         <ul className="navbar-nav">
           <li className="nav-item">
             <NavLink className="nav-button" to="/">
@@ -146,7 +155,7 @@ export default function Navigation() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink className="nav-button" to="/About.jsx">
+            <NavLink className="nav-button" to="/about">
               About
             </NavLink>
           </li>

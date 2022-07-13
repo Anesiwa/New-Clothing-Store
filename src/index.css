@@ -51,3 +51,6 @@ code {
 .nav-button:hover {
   filter: brightness(1.2);
 }
+.about h2 {
+  font-size: 45px;
+}

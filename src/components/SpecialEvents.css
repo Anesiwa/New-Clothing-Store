@@ -1,9 +1,8 @@
-.container {
-  padding: 10px;
-}
+.container,
 .Special-Events {
   padding: 10px;
 }
+
 h1 {
   font-size: 80px;
 }
@@ -13,6 +12,7 @@ h1 {
 .wine-dinner-contact,
 h3 {
   margin: 0 auto;
+  text-align: center;
 }
 @media (max-width: 576px) {
   h1 {
@@ -34,8 +34,5 @@ h3 {
   .img {
     width: 300;
     height: 180;
-  }
-  .claudiaEmail {
-    text-align: center;
   }
 }

@@ -4,6 +4,7 @@ export default function About() {
   return (
     <div className="about">
       <div className="container">
+        <h1 className="font-weight-light text-center">About Us</h1>
         <div className="row align-items-center my-5">
           <div className="col-lg-7">
             <img
@@ -13,7 +14,6 @@ export default function About() {
             />
           </div>
           <div className="col-lg-5">
-            <h1 className="font-weight-light">About</h1>
             <div>
               <h3>Our Building</h3>
               <p className="building-description-1">
@@ -42,7 +42,7 @@ export default function About() {
             </p>
           </div>
         </div>
-        <h2>Specials</h2>
+        <h2 className="text-center">Specials</h2>
         <section>
           <div className="specials-sections">
             <h3>Chef Justin's Weekly Specials</h3>
