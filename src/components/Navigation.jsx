@@ -15,7 +15,7 @@ export default function Navigation() {
             width="60"
           />
         </span>
-        <ul className="navbar-nav">
+        <ul className="navbar-nav navbar-expand-lg">
           <li className="nav-item">
             <NavLink className="nav-button" to="/">
               HOME
@@ -38,10 +38,7 @@ export default function Navigation() {
             </NavLink>
           </li>
           <li className="nav-item">
-            <NavLink
-              className="nav-button special-events-link"
-              to="./SpecialEvents"
-            >
+            <NavLink className="nav-button" to="./SpecialEvents">
               SPECIAL EVENTS
             </NavLink>
           </li>
