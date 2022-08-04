@@ -190,7 +190,7 @@ export default function Home() {
             marginRight: 20,
           }}
         ></div>
-        <section className="building-info">
+        <section className="building-info text-center">
           <div>
             <h3>Our Building</h3>
             <p className="building-description">
@@ -198,7 +198,7 @@ export default function Home() {
               1912 and has been designed with an element of contemporary flair
               and old fashioned elegance.
             </p>
-            <a href="./About.jsx" className="btn btn-primary btn-lrg">
+            <a href="./About" className="btn btn-danger btn-lrg">
               Learn more
             </a>
           </div>

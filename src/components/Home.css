@@ -30,3 +30,26 @@ section {
 .happy-hour {
   background-color: #dc3545;
 }
+
+@media (max-width: 576px) {
+  .home h1 {
+    font-size: 30px;
+  }
+  .rotating-homepage-photos {
+    display: none;
+  }
+  .home h2 {
+    font-size: 20px;
+    text-align: left;
+    padding: 0;
+  }
+  .home p {
+    text-align: center;
+    padding: 0;
+  }
+  .btn {
+  }
+  .happy-hour {
+    display: none;
+  }
+}
