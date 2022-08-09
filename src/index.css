@@ -8,6 +8,7 @@ body {
 }
 .container {
   margin: 0 auto;
+  background-color: #fcfeff;
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
@@ -17,7 +18,7 @@ code {
   --background: black;
   --primary-color: red;
   --secondary-color: #ea7d3a;
-  --tertiary-color: white;
+  --tertiary-color: #fcfeff;
   --text-color: black;
   --nav-size: 70px;
   --border: 5px solid red;
@@ -52,4 +53,7 @@ code {
 }
 .about h2 {
   font-size: 45px;
+}
+footer .container {
+  background-color: var(--background);
 }
