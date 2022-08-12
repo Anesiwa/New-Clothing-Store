@@ -26,7 +26,7 @@ export default function Post() {
       <div>
         <menuItems
           menuItemTitle="Roasted Garlic"
-          menuItemCost={9}
+          menuItemCost="9"
           menuItemDescription="Roasted garlic in olive oil.Served with Crostinis"
         />
         <menuItems
