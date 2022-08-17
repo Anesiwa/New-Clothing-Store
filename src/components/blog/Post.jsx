@@ -11,8 +11,8 @@ export default function Post() {
   function menuItems(props) {
     return (
       <div>
-        <span className="menu-item">{props.menuItemTitle}</span>
         <span classname="menu-item-cost">{props.menuItemCost}</span>
+        <span className="menu-item">{props.menuItemTitle}</span>
         <div className="menu-description">{props.menuItemDescription}</div>
       </div>
     );
