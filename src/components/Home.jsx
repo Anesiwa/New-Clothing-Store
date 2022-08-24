@@ -1,10 +1,12 @@
 import React from "react";
 import "./Home.css";
+import Hero from "./Hero";
 
 export default function Home() {
   return (
     <div className="home">
       <div className="container">
+        <Hero />
         <div className="restaurant-synopsis text-center mt-5 mb-5">
           <h1 className="mb-3">
             We specialize in robust, gourmet food with an extensive wine and

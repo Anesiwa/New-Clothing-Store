@@ -1,5 +1,5 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import ReactDOM from "react-dom/client";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
@@ -9,33 +9,39 @@ import {
   Home,
   About,
   Contact,
-  Blog,
-  Posts,
-  Post,
-  Hero,
+  Menus,
   SpecialEvents,
+  Cheesecake,
+  Martinis,
+  Dinner,
+  Wine,
+  Cocktails,
+  Login,
 } from "./components";
 
-ReactDOM.render(
+const root = ReactDOM.createRoot(document.getElementById("root"));
+
+root.render(
   <Router>
     <Navigation />
     <div className="container">
-      <Hero />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/blog" element={<Blog />}>
-          <Route path="" element={<Posts />} />
-          <Route path=":postSlug" element={<Post />} />
+        <Route path="/menus" element={<Menus />}>
+          <Route path="dinner" element={<Dinner />} />
+          <Route path="cheesecake" element={<Cheesecake />} />
+          <Route path="martinis" element={<Martinis />} />
+          <Route path="wine" element={<Wine />} />
+          <Route path="Cocktails" element={<Cocktails />} />
         </Route>
-        <Route path="/SpecialEvents" element={<SpecialEvents />} />
+        <Route path="/specialevents" element={<SpecialEvents />} />
+        <Route path="/login" element={<Login />} />
       </Routes>
     </div>
     <Footer />
-  </Router>,
-
-  document.getElementById("root")
+  </Router>
 );
 
 serviceWorker.unregister();

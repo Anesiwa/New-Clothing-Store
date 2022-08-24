@@ -27,14 +27,14 @@ const LinkItem = styled.li`
   border-top: 3px solid transparent;
   transition: all 220ms ease-in-out;
   &:hover {
-    border-top: 2px solid red;
-    color: red;
+    border-top: 2px solid var(--primary-color);
+    color: var(--primary-color);
   }
 `;
 
 const Link = styled.a`
   text-decoration: none;
-  color: inherit;
+  color: var(--primary-color);
   font-size: inherit;
 `;
 
@@ -52,10 +52,10 @@ export function NavLinks(props) {
           <Link href="/contact">Contact</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="/blog">Menus</Link>
+          <Link href="/menus">Menus</Link>
         </LinkItem>
         <LinkItem>
-          <Link href="/SpecialEvents">Special Events</Link>
+          <Link href="/specialevents">Special Events</Link>
         </LinkItem>
       </LinksWrapper>
     </NavLinksContainer>

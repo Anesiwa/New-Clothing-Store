@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import "./Posts.css";
-import scampi from "./blog-photos/scampi_pasta.JPEG";
-import peachMarg from "./blog-photos/peachMarg.jpeg";
-import cheesecake from "./blog-photos/cheesecake.JPEG";
-import martini from "./blog-photos/saltedCarmelMartini.jpeg";
+import scampi from "./menu-photos/scampi_pasta.JPEG";
+import peachMarg from "./menu-photos/peach-marg.jpeg";
+import cheesecake from "./menu-photos/cheesecake.JPEG";
+import martini from "./menu-photos/salted-carmel-martini.jpeg";
 
 function Posts() {
   return (

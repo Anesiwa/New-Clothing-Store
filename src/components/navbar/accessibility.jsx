@@ -23,7 +23,7 @@ const RegisterButton = styled.button`
   transition: all 240ms ease-in-out;
   cursor: pointer;
   &:hover {
-    background-color: var(--primary-color);
+    background-color: var(--background);
   }
   &:not(:last-of-type) {
     margin-right: 7px;
@@ -55,7 +55,9 @@ export function Accessibility(props) {
   return (
     <AccessibilityContainer>
       <RegisterButton>Register</RegisterButton>
-      <LoginButton>Login</LoginButton>
+      <LoginButton>
+        <a href="/login">Login</a>
+      </LoginButton>
     </AccessibilityContainer>
   );
 }
