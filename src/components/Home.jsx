@@ -1,6 +1,14 @@
 import React from "react";
 import "./Home.css";
 import Hero from "./Hero";
+import Pic1 from "./images/ribeye.JPG";
+import Pic2 from "./images/wineDinnerCover.png";
+import Pic3 from "./images/cheesecake.JPEG";
+import Pic4 from "./images/saltedCarmelMartini.jpeg";
+import Pic5 from "./images/scampi_pasta.JPEG";
+import Pic6 from "./images/pizza.JPEG";
+import Pic7 from "./images/martini_glass_2.JPEG";
+import Pic8 from "./images/joel_gott.jpg";
 
 export default function Home() {
   return (
@@ -24,21 +32,21 @@ export default function Home() {
             <div className="col-4">
               <img
                 className="img-fluid rounded mb-4"
-                src="src/images/logo_w_name.png"
+                src={Pic1}
                 alt="The Phoenix of Davenport"
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded mb-4"
-                src="src/images/logo_w_name.png"
+                src={Pic7}
                 alt="The Phoenix of Davenport"
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded mb-4"
-                src="src/images/logo_w_name.png"
+                src={Pic3}
                 alt="The Phoenix of Davenport"
               />
             </div>
@@ -47,21 +55,21 @@ export default function Home() {
             <div className="col-4">
               <img
                 className="img-fluid rounded mb-4"
-                src="src/images/logo_w_name.png"
+                src={Pic4}
                 alt="The Phoenix of Davenport"
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded mb-4"
-                src="src/images/logo_w_name.png"
+                src={Pic5}
                 alt="The Phoenix of Davenport"
               />
             </div>
             <div className="col-4">
               <img
                 className="img-fluid rounded mb-4"
-                src="src/images/logo_w_name.png"
+                src={Pic8}
                 alt="The Phoenix of Davenport"
               />
             </div>
@@ -75,15 +83,19 @@ export default function Home() {
           }}
         ></div>
         <div className="row phoenix-synopsis">
-          <div className="col-5">
+          <div className="col-5 d-flex">
             <h2>Bringing the Feel of Chicago to Downtown Davenport</h2>
           </div>
           <div className="col-7">
-            <p>
-              Come down and visit our exceptional martini bar and try one our
-              signature martinis. Wine lovers will appreciate our robust wine
-              list featuring over 35 wines!
+            <p className="text-center">
+              Wine lovers will appreciate our robust wine list featuring over 35
+              wines!
             </p>
+            <img
+              className="img-fluid rounded"
+              src={Pic2}
+              alt="Wine Dinner Photo"
+            />
           </div>
         </div>
         <div
@@ -95,6 +107,10 @@ export default function Home() {
         ></div>
 
         <section className="happy-hour mt-5 mb-5">
+          <p className="text-center">
+            Come down and visit our exceptional martini bar and try one our
+            signature martinis.{" "}
+          </p>
           <div className="row">
             <div className="col-2">
               <img

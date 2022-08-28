@@ -13,7 +13,7 @@ export default function Dinner() {
             <strong className="itemName">Roasted Garlic</strong>
             <span className="menuDescription">
               {" "}
-              - Roasted garlic in olive oil.Served with crostinis
+              - Roasted garlic in olive oil. Served with crostinis
             </span>
           </li>
           <li className="menuItems">
@@ -195,8 +195,14 @@ export default function Dinner() {
             </span>
           </li>
         </ul>
-        <div className="container">
-          <strong className="itemName">Soup</strong>
+        <p className="additional-info">
+          To any salad you may add:{" "}
+          <div>Salmon $10 | Shrimp $8 | Chicken $5</div>
+        </p>
+        <div className="container text-center">
+          <div>
+            <strong className="itemName">Soup</strong>
+          </div>
           <div>
             <em className="itemCost">Cup $4 | Bowl $6</em>
           </div>
@@ -341,7 +347,7 @@ export default function Dinner() {
             </span>
           </li>
           <li className="menuItems">
-            <em className="itemCost">$9</em>{" "}
+            <em className="itemCost">$24</em>{" "}
             <strong className="itemName">Horseradish Encrusted Salmon</strong>
             <span className="menuDescription">
               {" "}
@@ -401,7 +407,7 @@ export default function Dinner() {
             </span>
           </li>
           <li className="menuItems">
-            <em className="itemCost">21</em>{" "}
+            <em className="itemCost">$21</em>{" "}
             <strong className="itemName">Blackened Chicken Alfredo</strong>
             <span className="menuDescription">
               {" "}
@@ -438,16 +444,22 @@ export default function Dinner() {
             </span>
           </li>
           <li className="menuItems">
-            <em className="itemCost">$9</em>{" "}
+            <em className="itemCost">$19</em>{" "}
             <strong className="itemName">Szechuan Pasta</strong>
-            <span className="menuDescription"> - Sauteed </span>
+            <span className="menuDescription">
+              {" "}
+              - Sauteed mixed vegetables and trottole in our sweet & spicy
+              Szechuan sauce. Add breaded or grilled chicken, or shrimp for an
+              additional charge{" "}
+            </span>
           </li>
           <li className="menuItems">
-            <em className="itemCost">$9</em>{" "}
+            <em className="itemCost">$21</em>{" "}
             <strong className="itemName">Salmon Carbonara</strong>
             <span className="menuDescription">
               {" "}
-              - Roasted garlic in olive oil.Served with Crostinis
+              - Freshly grilled salmon with shallots, pancetta & peas. Tossed in
+              a creanm carbonara sauce with fettuccini
             </span>
           </li>
         </ul>
@@ -548,14 +560,14 @@ export default function Dinner() {
         </ul>
       </section>
       <h3 className="food-category">Sides</h3>
-      <section>
+      <section className="text-center">
         <ul>
           <li className="menuItems">
             <div className="menuDescription">
               Steak cut Fries | Shoestring Fries | Cup of Soup | Asian slaw |
               Creamy Cole Slaw
             </div>
-            <div>
+            <div className="menuDescription">
               Garlic Mashed Potatoes | Sauteed Mushrooms | Sauteed Onions |
               Mushroom Rice Pilaf | Coconut Rice
             </div>

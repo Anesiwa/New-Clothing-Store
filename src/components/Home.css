@@ -4,6 +4,9 @@
 .home h1 {
   font-size: 50px;
 }
+.home h2 {
+  font-size: 45px;
+}
 p {
   font-weight: bolder;
   padding: 5px;
@@ -23,6 +26,8 @@ section {
 }
 .restaurant-photos {
   border-radius: 5px;
+  height: fit-content;
+  width: ;
 }
 .phoenix-synopsis {
   margin: 50px;

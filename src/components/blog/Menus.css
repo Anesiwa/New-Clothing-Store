@@ -28,6 +28,7 @@ h2 {
 .additional-info {
   font-style: italic;
   font-weight: 600;
+  text-align: center;
 }
 .menuShortcuts a {
   color: var(--tertiary-color);
