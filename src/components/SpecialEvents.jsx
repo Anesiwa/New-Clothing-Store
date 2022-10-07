@@ -82,6 +82,9 @@ export default function SpecialEvents() {
             </div>
             <div className="wine-dinner-contact mt-3">
               <div className="p-3">
+                <a href="./winedinner" className="btn btn-danger btn-lrg mb-4">
+                  Sign up here
+                </a>
                 <p className="text-center mb-0 pb-0">
                   For more information, or to make a reservation,
                 </p>

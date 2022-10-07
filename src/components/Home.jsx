@@ -86,16 +86,15 @@ export default function Home() {
           <div className="col-5 d-flex">
             <h2>Bringing the Feel of Chicago to Downtown Davenport</h2>
           </div>
-          <div className="col-7">
+          <div className="col-7 text-center">
             <p className="text-center">
               Wine lovers will appreciate our robust wine list featuring over 35
               wines!
             </p>
-            <img
-              className="img-fluid rounded"
-              src={Pic2}
-              alt="Wine Dinner Photo"
-            />
+            <a href="./winedinner" className="btn btn-danger btn-lrg mb-4">
+              Sign up for our famous Wine Dinners!
+            </a>
+            <img className="img-fluid rounded" src={Pic2} alt="Wine Dinner" />
           </div>
         </div>
         <div
@@ -108,8 +107,8 @@ export default function Home() {
 
         <section className="happy-hour mt-5 mb-5">
           <p className="text-center">
-            Come down and visit our exceptional martini bar and try one our
-            signature martinis.{" "}
+            Come down and visit our exceptional bar and try one our signature
+            martinis{" "}
           </p>
           <div className="row">
             <div className="col-2">
@@ -200,6 +199,10 @@ export default function Home() {
               />
             </div>
           </div>
+          <p className="text-center">
+            Happy Hour runs Monday-Saturday from 3-6 p.m. and 9-11 p.m. and
+            features daily drink specials. Enjoy Happy Hour All Day on Mondays!
+          </p>
         </section>
         <div
           style={{
@@ -217,7 +220,7 @@ export default function Home() {
               and old fashioned elegance.
             </p>
             <a href="./About" className="btn btn-danger btn-lrg">
-              Learn more
+              Learn more about our History
             </a>
           </div>
         </section>

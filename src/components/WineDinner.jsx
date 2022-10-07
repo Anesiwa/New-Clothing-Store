@@ -1,5 +1,6 @@
 import React from "react";
-import "./form.css";
+import "./contact-section/form.css";
+import Pic2 from "./images/wineDinnerCover.png";
 
 const formInputs = [
   { id: "name", type: "text", label: "Your name", placeholder: "John Doe" },
@@ -15,20 +16,21 @@ const formInputs = [
     label: "Email address",
     placeholder: "you@example.com",
   },
-  {
-    id: "message",
-    type: "textarea",
-    label: "Your message",
-    placeholder: "How can we help you? Or you us?",
-  },
 ];
 
-export default function Form() {
+export default function WineDinner() {
   return (
-    <div>
-      <form className="form">
-        <h2 className="form-h2">Send us a message</h2>
-
+    <div className="wineDinner container">
+      <h1>Phoenix Wine Dinners</h1>
+      <img className="img-fluid rounded" src={Pic2} alt="Wine Dinner Photo" />
+      <br />
+      <p>
+        Add your name to our mailing list and be first to sign up for the next
+        dinner. Seats typically in less than one day, so when you recieve the
+        notification to sign up, do so IMMEDIATELY to secure a spot!
+      </p>
+      <br />
+      <form className="wineDinnerSignup">
         {formInputs.map((input) => (
           <label key={input.label} id={input.id} className="form-label">
             {input.label}
@@ -47,16 +49,10 @@ export default function Form() {
             )}
           </label>
         ))}
-
-        {/* <button className="form-submit" type="submit">
-      Send message
-    </button> */}
-      </form>
-      <div>
-        <a href="/" className="btn btn-danger btn-lrg">
-          Submit
+        <a href="./winedinner" className="btn btn-danger btn-lrg mb-4">
+          Get on the list!
         </a>
-      </div>
+      </form>
     </div>
   );
 }

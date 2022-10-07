@@ -17,6 +17,7 @@ import {
   Wine,
   Cocktails,
   Login,
+  WineDinner,
 } from "./components";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -38,6 +39,7 @@ root.render(
         </Route>
         <Route path="/specialevents" element={<SpecialEvents />} />
         <Route path="/login" element={<Login />} />
+        <Route path="/winedinner" element={<WineDinner />} />
       </Routes>
     </div>
     <Footer />

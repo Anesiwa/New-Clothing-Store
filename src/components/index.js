@@ -12,3 +12,4 @@ export { default as Martinis } from "./blog/Martinis";
 export { default as Wine } from "./blog/Wine";
 export { default as Cocktails } from "./blog/Cocktails";
 export { default as Login } from "./Login";
+export { default as WineDinner } from "./WineDinner";
