@@ -111,7 +111,7 @@ export default function SpecialEvents() {
                     height="280"
                   />
                 </div>
-                <div className="col-lg-7">
+                <div className="col-lg-7" id="Dinner42">
                   <h2 className="font-weight-light">Dinner for Two Special</h2>
                   <p>
                     Monday through Thursday, let us do the work with a set menu

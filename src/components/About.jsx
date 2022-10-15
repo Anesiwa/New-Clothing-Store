@@ -43,7 +43,7 @@ export default function About() {
           </div>
         </div>
         <h2 className="text-center">Specials</h2>
-        <section>
+        <section className="text-center about-section">
           <div className="specials-sections">
             <h3>Chef Justin's Weekly Specials</h3>
             <p>
@@ -56,31 +56,63 @@ export default function About() {
           <div className="row">
             <div className="col-6">
               <h3>Happy Hour</h3>{" "}
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Numquam aperiam provident tempora? Cumque adipisci, non dolorem
-                quia, odit qui alias veniam excepturi rem dolor fugit
-                dignissimos, sed voluptatum blanditiis harum.
-              </p>
+              <ul>
+                <li className="hh-header">
+                  <strong>Tuesday - Saturday</strong>
+                </li>
+                <li> 3pm to 6pm & 9pm to 11pm</li>
+                <li className="mb-2">
+                  <strong>Mondays - All Day!</strong>
+                </li>
+                <div
+                  style={{
+                    borderTop: "2px solid #dc3545 ",
+                    marginLeft: 100,
+                    marginRight: 100,
+                  }}
+                ></div>
+                <li className="mt-2">$7.00 Signature Martinis</li>
+                <li> $1 off Draft Pints</li>
+                <li> $3 Well Cocktails</li>
+                <li>$3 Domestic Bottles</li>
+                <li> $2 off Wine By The Glass</li>
+                <li> $2 off Appetizers (Not on Saturday Nights)</li>
+              </ul>
             </div>
             <div className="col-6">
-              <h3>Summer Cocktail Menu</h3>{" "}
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                Numquam aperiam provident tempora? Cumque adipisci, non dolorem
-                quia, odit qui alias veniam excepturi rem dolor fugit
-                dignissimos, sed voluptatum blanditiis harum.
+              <h3>Rotating Cocktail Menu</h3>{" "}
+              <p className="mt-3 cocktail-menu-description">
+                Looking for something a bit different for a drink tonight? Look
+                no further than the ever-changing cocktail menu at the Phoenix!
+                Our skilled mixologists are always evolving our rotating drink
+                menu based on the season and the taste of our guests. Come try
+                our award winning Smoking Jacket or Monster Cookie martini
+                tonight!
               </p>
             </div>
           </div>
-          <div className="specials-sections">
+          <div>
             <h3>Dinner for Two - $65</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
-              aperiam provident tempora? Cumque adipisci, non dolorem quia, odit
-              qui alias veniam excepturi rem dolor fugit dignissimos, sed
-              voluptatum blanditiis harum.
-            </p>
+            <ul>
+              <li>Monday thru Thursday</li>
+              <li>Includes:</li>
+              <li>Two drinks</li>
+              <li>Two soups or salads</li>
+              <li>Choice of Two Entrees*</li>
+              <li>*Add $5 for Ribeye or NY Strip, $8 for Filet</li>
+              <li>
+                For more details click <a href="./specialevents">here</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            To make a reservation, please call us today at (563) 323-2345
+          </div>
+          <div className="coupon-disclaimer">
+            <strong>
+              No Coupons or Discounts Allowed on Happy Hour or the Dinner for
+              Two Promotion
+            </strong>
           </div>
         </section>
       </div>

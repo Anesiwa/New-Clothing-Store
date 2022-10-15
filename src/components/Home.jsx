@@ -17,15 +17,9 @@ export default function Home() {
         <Hero />
         <div className="restaurant-synopsis text-center mt-5 mb-5">
           <h1 className="mb-3">
-            We specialize in robust, gourmet food with an extensive wine and
-            martini list.
+            The Phoenix in Davenport, Iowa has an extensive, mouth watering menu
+            to satisfy your most curious appetite.
           </h1>
-          <p>
-            Our dessert menu consists of Chef's homemade cheesecakes and
-            occasional chef specialty desserts. Our restaurant offers fine
-            dining with a downtown Chicago flare. Plus, we offer a complimentary
-            slice of cheesecake for birthdays and anniversaries!
-          </p>
         </div>
         <div className="rotating-homepage-photos">
           <div className="row restaurant-photos">
@@ -75,6 +69,13 @@ export default function Home() {
             </div>
           </div>
         </div>
+        <p className="text-center">
+          We specialize in robust, gourmet food with an extensive wine and
+          martini list. Our dessert menu consists of Chef's homemade cheesecakes
+          and occasional chef specialty desserts. We offer banquets, fine
+          dining, an extraordinary martini selection, and a very extensive wine
+          list for your pleasure.
+        </p>
         <div
           style={{
             borderTop: "2px solid #dc3545 ",
@@ -89,7 +90,8 @@ export default function Home() {
           <div className="col-7 text-center">
             <p className="text-center">
               Wine lovers will appreciate our robust wine list featuring over 35
-              wines!
+              wines! Not sure what to drink with dinner? Ask Claudia or your
+              server for a personalized recommendation!
             </p>
             <a href="./winedinner" className="btn btn-danger btn-lrg mb-4">
               Sign up for our famous Wine Dinners!
@@ -222,6 +224,22 @@ export default function Home() {
             <a href="./About" className="btn btn-danger btn-lrg">
               Learn more about our History
             </a>
+          </div>
+        </section>
+        <div
+          style={{
+            borderTop: "2px solid #dc3545 ",
+            marginLeft: 20,
+            marginRight: 20,
+          }}
+        ></div>
+        <section className="text-center">
+          <div>
+            <p>
+              We Will Gladly Accept Luncheons for 10 People or More With a 24
+              Hour Notice.
+            </p>
+            <p>Minimum of 10 Entrees Required</p>
           </div>
         </section>
       </div>

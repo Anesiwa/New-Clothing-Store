@@ -14,7 +14,7 @@
 
 .form-label {
   margin: 10px 0;
-  text-align: left;
+  text-align: center;
   width: 100%;
 }
 
@@ -47,7 +47,10 @@
 p {
   margin: 0 auto;
 }
-
+img {
+  display: inline-block;
+  text-align: center;
+}
 @media screen and (min-width: 799px) {
   .form {
     display: grid;
