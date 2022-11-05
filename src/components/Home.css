@@ -24,6 +24,7 @@ section {
 }
 .about-section {
   border: 4px solid #dc3545;
+  border-radius: 2px;
 }
 .restaurant-synopsis,
 .builder-info {
@@ -38,7 +39,7 @@ section {
 .restaurant-photos {
   border-radius: 5px;
   height: fit-content;
-  width: ;
+  width: auto;
 }
 .phoenix-synopsis {
   margin: 50px;

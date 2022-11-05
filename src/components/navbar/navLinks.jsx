@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const NavLinksContainer = styled.div`
-  height: 100%;
+  height: 55%;
   display: flex;
   align-items: center;
 `;
@@ -11,7 +11,7 @@ const LinksWrapper = styled.ul`
   margin: 0;
   padding: 0;
   display: flex;
-  height: 100%;
+  height: 50%;
   list-style: none;
 `;
 
