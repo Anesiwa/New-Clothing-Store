@@ -17,8 +17,8 @@ export default function Home() {
         <Hero />
         <div className="restaurant-synopsis text-center mt-5 mb-5">
           <h1 className="mb-3">
-            The Phoenix in Davenport, Iowa has an extensive, mouth watering menu
-            to satisfy your most curious appetite.
+            Embers of the Phoenix in Downtown Davenport has an extensive
+            mouth-watering menu to satisfy your most curious appetite.
           </h1>
         </div>
         <div className="rotating-homepage-photos">
