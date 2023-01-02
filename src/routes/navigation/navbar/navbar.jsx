@@ -3,8 +3,9 @@ import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 import { Accessibility } from "./accessibility";
 import { NavLinks } from "./navLinks";
-import { DeviceSize } from "../responsive";
+import { DeviceSize } from "./responsive/index.jsx";
 import { MobileNavLinks } from "./mobileNavLinks";
+import { ReactComponent as Logo } from "../../../assets/crown.svg";
 
 const NavbarContainer = styled.div`
   height: 60px;
@@ -34,7 +35,7 @@ export function Navbar(props) {
   return (
     <NavbarContainer>
       <LeftSection>
-        <div>Empty logo</div>
+        <Logo />
       </LeftSection>
       <MiddleSection>{!isMobile && <NavLinks />}</MiddleSection>
       <RightSection>
