@@ -1,51 +1,12 @@
 .navbar,
 .nav-link,
 .navbar-brand {
-  color: red;
+  color: black;
 }
-.navbar {
-  height: var(--nav-size);
-  display: var(--display);
-  border-bottom: var(--border);
-  background-color: var(--background);
-  padding: 0 1rem;
-}
+
 .navbar-nav {
   max-width: 100%;
   display: inline-flex;
   justify-content: flex-end;
   flex-direction: row;
-}
-
-#divider-7 {
-  display: flex;
-  position: relative;
-  height: 1px;
-  margin: 0;
-  background: red;
-}
-
-.nav-item {
-  height: 50px;
-  display: flex;
-  font-size: 15px;
-  font-weight: 600;
-  align-items: center;
-  border-radius: var(--border-radius);
-  transition: height var(--speed) ease;
-  padding: 0.5rem;
-}
-.special-events-link {
-  font-size: smaller;
-}
-.menu-item .icon-button {
-  margin-right: 0.5rem;
-}
-
-.menu-item .icon-button:hover {
-  filter: none;
-}
-
-.menu-item:hover {
-  background-color: #525357;
 }

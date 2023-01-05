@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Accessibility } from "./accessibility";
+import "../../../index.css";
+import { Link } from "react-router-dom";
+
 import { MenuToggle } from "./menuToggle";
 
 const NavLinksContainer = styled.div`
@@ -23,53 +25,21 @@ const LinksWrapper = styled.ul`
   left: 0;
 `;
 
-const LinkItem = styled.li`
-  width: 100%;
-  padding: 0 1.1em;
-  color: #222;
-  font-weight: 500;
-  font-size: 16px;
-  display: flex;
-  margin-bottom: 10px;
-`;
-
-const Link = styled.a`
-  text-decoration: none;
-  color: inherit;
-  font-size: inherit;
-`;
-
-const Marginer = styled.div`
-  height: 2px;
-`;
-
 export function MobileNavLinks(props) {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <NavLinksContainer>
-      <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
-      {isOpen && (
-        <LinksWrapper>
-          <LinkItem>
-            <Link href="/">Home</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="/about">About</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="/contact">Contact</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="/menus">Menus</Link>
-          </LinkItem>
-          <LinkItem>
-            <Link href="/SpecialEvents">Special Events</Link>
-          </LinkItem>
-          <Marginer />
-          <Accessibility />
-        </LinksWrapper>
-      )}
-    </NavLinksContainer>
+    <div>
+      <NavLinksContainer>
+        <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
+        {isOpen && (
+          <LinksWrapper>
+            <Link className="nav-link" to="/shop">
+              SHOP
+            </Link>
+          </LinksWrapper>
+        )}
+      </NavLinksContainer>
+    </div>
   );
 }
