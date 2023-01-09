@@ -3,7 +3,7 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { SignIn } from "./routes/sign-in/sign-in.component";
+import { Authentication } from "./routes/authentication/authentication";
 import { Navigation } from "./routes/navigation/navigation.component";
 import Home from "./routes/home/home.component";
 
@@ -19,7 +19,7 @@ root.render(
     <div className="container">
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/auth" element={<Authentication />} />
         <Route path="/shop" element={<Shop />} />
       </Routes>
     </div>
