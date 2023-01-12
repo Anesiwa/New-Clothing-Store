@@ -2,8 +2,13 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import "../../../index.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Fragment } from "react";
 
 import { MenuToggle } from "./menuToggle";
+
+import { UserContext } from "../../../context/user.context";
+import { signOutUser } from "../../../utils/firebase/firebase.utils";
 
 const NavLinksContainer = styled.div`
   height: 100%;
@@ -28,21 +33,36 @@ const LinksWrapper = styled.ul`
 export function MobileNavLinks(props) {
   const [isOpen, setOpen] = useState(false);
 
+  const { currentUser, setCurrentUser } = useContext(UserContext);
+
+  const signOutHandler = async () => {
+    await signOutUser();
+    setCurrentUser(null);
+  };
+
   return (
-    <div>
-      <NavLinksContainer>
-        <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
-        {isOpen && (
-          <LinksWrapper>
-            <Link className="nav-link" to="/shop">
-              SHOP
-            </Link>
-            <Link className="nav-link" to="/auth">
-              SIGN IN
-            </Link>
-          </LinksWrapper>
-        )}
-      </NavLinksContainer>
-    </div>
+    <Fragment>
+      <div>
+        <NavLinksContainer>
+          <MenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
+          {isOpen && (
+            <LinksWrapper>
+              <Link className="nav-link" to="/shop">
+                SHOP
+              </Link>
+              {currentUser ? (
+                <span className="nav-link" onClick={signOutHandler}>
+                  SIGN OUT
+                </span>
+              ) : (
+                <Link className="nav-link" to="/auth">
+                  SIGN IN
+                </Link>
+              )}
+            </LinksWrapper>
+          )}
+        </NavLinksContainer>
+      </div>
+    </Fragment>
   );
 }

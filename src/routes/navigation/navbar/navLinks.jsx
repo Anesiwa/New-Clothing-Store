@@ -2,6 +2,11 @@ import React from "react";
 import styled from "styled-components";
 import "../../../index.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { Fragment } from "react";
+
+import { UserContext } from "../../../context/user.context";
+import { signOutUser } from "../../../utils/firebase/firebase.utils";
 
 const NavLinksContainer = styled.div`
   width: 50%;
@@ -20,18 +25,33 @@ const LinksWrapper = styled.ul`
 `;
 
 export function NavLinks(props) {
+  const { currentUser, setCurrentUser } = useContext(UserContext);
+
+  const signOutHandler = async () => {
+    await signOutUser();
+    setCurrentUser(null);
+  };
+
   return (
-    <div>
-      <NavLinksContainer>
-        <LinksWrapper>
-          <Link className="nav-link" to="/shop">
-            SHOP
-          </Link>
-          <Link className="nav-link" to="/auth">
-            SIGN IN
-          </Link>
-        </LinksWrapper>
-      </NavLinksContainer>
-    </div>
+    <Fragment>
+      <div>
+        <NavLinksContainer>
+          <LinksWrapper>
+            <Link className="nav-link" to="/shop">
+              SHOP
+            </Link>
+            {currentUser ? (
+              <span className="nav-link" onClick={signOutHandler}>
+                SIGN OUT
+              </span>
+            ) : (
+              <Link className="nav-link" to="/auth">
+                SIGN IN
+              </Link>
+            )}
+          </LinksWrapper>
+        </NavLinksContainer>
+      </div>
+    </Fragment>
   );
 }
