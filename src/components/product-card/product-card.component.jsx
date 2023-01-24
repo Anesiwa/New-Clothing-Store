@@ -3,7 +3,7 @@ import { useContext } from "react";
 import Button from "../button/button.component";
 import { CartContext } from "../../contexts/cart.context";
 
-export function ProductCard({ product }) {
+const ProductCard = ({ product }) => {
   const { name, price, imageUrl } = product;
   const { addItemToCart } = useContext(CartContext);
 
@@ -21,4 +21,6 @@ export function ProductCard({ product }) {
       </Button>
     </div>
   );
-}
+};
+
+export default ProductCard;
