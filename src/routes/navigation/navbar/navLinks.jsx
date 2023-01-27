@@ -19,12 +19,13 @@ const NavLinksContainer = styled.div`
   justify-content: flex-end;
 `;
 
-const LinksWrapper = styled.ul`
-  margin: 0;
-  padding: 0;
+const LinksWrapper = styled.div`
+  widht: 50%;
   display: flex;
-  height: 50%;
+  height: 100%;
   list-style: none;
+  align-items: center;
+  justify-content: flex-end;
 `;
 
 export function NavLinks(props) {

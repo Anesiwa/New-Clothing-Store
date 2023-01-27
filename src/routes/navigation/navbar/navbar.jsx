@@ -25,7 +25,7 @@ const LeftSection = styled.div`
 `;
 
 const RightSection = styled.div`
-  width: 50%;
+  width: 70%;
   height: 100%;
   display: flex;
   align-items: center;
