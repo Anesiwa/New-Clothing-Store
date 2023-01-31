@@ -11,6 +11,7 @@ import { useNavigate } from "react-router";
 
 export default function CartDropDown() {
   const { cartItems } = useContext(CartContext);
+
   const navigate = useNavigate();
 
   const goToCheckoutHandler = () => {

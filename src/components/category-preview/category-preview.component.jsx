@@ -7,7 +7,7 @@ import ProductCard from "../product-card/product-card.component";
 
 const CategoryPreview = ({ title, products }) => (
   <CategoryPreviewContainer>
-    <h2>
+    <h2 className="mt-5">
       <CategoryTitle>{title.toUpperCase()}</CategoryTitle>
     </h2>
     <CategoriesPreview>

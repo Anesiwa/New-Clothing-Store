@@ -6,17 +6,18 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Authentication } from "./routes/authentication/authentication";
 import { Navigation } from "./routes/navigation/navigation.component";
 import Home from "./routes/home/home.component";
-import { UserProvider } from "./contexts/user.context";
 import Shop from "./routes/shop/shop.component";
 import { CategoriesProvider } from "./contexts/categories.context";
 import { CartProvider } from "./contexts/cart.context";
 import { Checkout } from "./routes/checkout/checkout.component";
+import { Provider } from "react-redux";
+import { store } from "./store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-  <Router>
-    <UserProvider>
+  <Provider store={store}>
+    <Router>
       <CategoriesProvider>
         <CartProvider>
           <Navigation />
@@ -30,8 +31,8 @@ root.render(
           </div>
         </CartProvider>
       </CategoriesProvider>
-    </UserProvider>
-  </Router>
+    </Router>
+  </Provider>
 );
 
 serviceWorker.unregister();
