@@ -11,7 +11,7 @@ import { CategoriesProvider } from "./contexts/categories.context";
 import { CartProvider } from "./contexts/cart.context";
 import { Checkout } from "./routes/checkout/checkout.component";
 import { Provider } from "react-redux";
-import { store } from "./store/store";
+import store from "./store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
