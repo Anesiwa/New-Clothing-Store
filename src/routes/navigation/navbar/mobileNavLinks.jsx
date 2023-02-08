@@ -1,17 +1,18 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { useSelector } from "react-redux";
 import "../../../index.css";
-import { Link } from "react-router-dom";
+import { Link, Outlet } from "react-router-dom";
 import CartIcon from "../../../components/cart-icon/cart-icon.component";
 import CartDropDown from "../../../components/cart-dropdown/cart-dropdown.component";
 import { useContext } from "react";
 import { Fragment } from "react";
 
+import { selectCurrentUser } from "../../../store/user/user.selector";
 import { MenuToggle } from "./menuToggle";
-
-import { UserContext } from "../../../contexts/user.context";
-import { CartContext } from "../../../contexts/cart.context";
 import { signOutUser } from "../../../utils/firebase/firebase.utils";
+
+import { CartContext } from "../../../contexts/cart.context";
 
 const NavLinksContainer = styled.div`
   height: 100%;
@@ -36,13 +37,8 @@ const LinksWrapper = styled.ul`
 export function MobileNavLinks(props) {
   const [isOpen, setOpen] = useState(false);
 
-  const { currentUser, setCurrentUser } = useContext(UserContext);
-  const { isCartOpen, setIsCartOpen } = useContext(CartContext);
-
-  const signOutHandler = async () => {
-    await signOutUser();
-    setCurrentUser(null);
-  };
+  const currentUser = useSelector(selectCurrentUser);
+  const { isCartOpen } = useContext(CartContext);
 
   return (
     <Fragment>
@@ -55,7 +51,7 @@ export function MobileNavLinks(props) {
                 SHOP
               </Link>
               {currentUser ? (
-                <span className="nav-link" onClick={signOutHandler}>
+                <span className="nav-link" onClick={signOutUser}>
                   SIGN OUT
                 </span>
               ) : (
@@ -69,6 +65,7 @@ export function MobileNavLinks(props) {
           )}
         </NavLinksContainer>
       </div>
+      <Outlet />
     </Fragment>
   );
 }

@@ -1,13 +1,14 @@
-import React from "react";
+import { Fragment, useContext } from "react";
+import { useSelector } from "react-redux";
+import { Outlet } from "react-router-dom";
+
 import styled from "styled-components";
 import "../../../index.css";
 import { Link } from "react-router-dom";
 import CartIcon from "../../../components/cart-icon/cart-icon.component";
 import CartDropDown from "../../../components/cart-dropdown/cart-dropdown.component";
-import { useContext } from "react";
-import { Fragment } from "react";
 
-import { UserContext } from "../../../contexts/user.context";
+import { selectCurrentUser } from "../../../store/user/user.selector";
 import { CartContext } from "../../../contexts/cart.context";
 import { signOutUser } from "../../../utils/firebase/firebase.utils";
 
@@ -28,14 +29,9 @@ const LinksWrapper = styled.div`
   justify-content: flex-end;
 `;
 
-export function NavLinks(props) {
-  const { currentUser, setCurrentUser } = useContext(UserContext);
-  const { isCartOpen, setIsCartOpen } = useContext(CartContext);
-
-  const signOutHandler = async () => {
-    await signOutUser();
-    setCurrentUser(null);
-  };
+export function NavLinks() {
+  const currentUser = useSelector(selectCurrentUser);
+  const { isCartOpen } = useContext(CartContext);
 
   return (
     <Fragment>
@@ -46,7 +42,7 @@ export function NavLinks(props) {
               SHOP
             </Link>
             {currentUser ? (
-              <span className="nav-link" onClick={signOutHandler}>
+              <span className="nav-link" onClick={signOutUser}>
                 SIGN OUT
               </span>
             ) : (
@@ -59,6 +55,7 @@ export function NavLinks(props) {
           </LinksWrapper>
         </NavLinksContainer>
       </div>
+      <Outlet />
     </Fragment>
   );
 }

@@ -1,20 +1,20 @@
 import styled from "styled-components";
 
-export const CategoryPreviewContainer = styled.div`
+import { Link } from "react-router-dom";
 
-.category-preview-container {
+export const CategoryPreviewContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 30px;
-  `;
+`;
 
-export const CategoryTitle = styled.span`
+export const Title = styled(Link)`
   font-size: 28px;
   margin-bottom: 25px;
   cursor: pointer;
 `;
 
-export const CategoriesPreview = styled.div`
+export const Preview = styled.div`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   column-gap: 20px;
