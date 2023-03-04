@@ -5,8 +5,8 @@ import { persistStore, persistReducer } from "redux-persist";
 import storage from "redux-persist/lib/storage";
 import logger from "redux-logger";
 
-import { rootReducer } from "./root-reducer";
 import { rootSaga } from "./root-saga";
+import { rootReducer } from "./root-reducer";
 
 const sagaMiddleware = createSagaMiddleware();
 
@@ -33,6 +33,7 @@ const composedEnhancers = composeEnhancer(applyMiddleware(...middleWares));
 
 export const store = configureStore({
   reducer: persistedReducer,
+  middleware: [sagaMiddleware, logger],
   composedEnhancers,
 });
 

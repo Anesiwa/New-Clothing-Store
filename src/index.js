@@ -3,13 +3,13 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import { Provider } from "react-redux";
 
-import App from "./App";
 import { PersistGate } from "redux-persist/integration/react";
+
+import App from "./App";
+import { store, persistor } from "./store/store";
 
 import "./index.css";
 import * as serviceWorker from "./serviceWorker";
-
-import { store, persistor } from "./store/store";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
