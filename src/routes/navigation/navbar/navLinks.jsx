@@ -1,5 +1,5 @@
 import { Fragment } from "react";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { Outlet } from "react-router-dom";
 import { Link } from "react-router-dom";
 
@@ -8,7 +8,7 @@ import CartDropDown from "../../../components/cart-dropdown/cart-dropdown.compon
 
 import { selectIsCartOpen } from "../../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../../store/user/user.selector";
-import { signOutUser } from "../../../utils/firebase/firebase.utils";
+import { signOutStart } from "../../../store/user/user.action";
 
 import styled from "styled-components";
 import "../../../index.css";
@@ -33,6 +33,9 @@ const LinksWrapper = styled.div`
 export function NavLinks() {
   const currentUser = useSelector(selectCurrentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
+  const dispatch = useDispatch();
+
+  const signOutUser = () => dispatch(signOutStart());
 
   return (
     <Fragment>

@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import "../../../index.css";
 import { Link, Outlet } from "react-router-dom";
 import CartIcon from "../../../components/cart-icon/cart-icon.component";
 import CartDropDown from "../../../components/cart-dropdown/cart-dropdown.component";
 import { Fragment } from "react";
-import { signOutUser } from "../../../utils/firebase/firebase.utils";
+import { signOutStart } from "../../../store/user/user.action";
 
 import { selectIsCartOpen } from "../../../store/cart/cart.selector";
 import { selectCurrentUser } from "../../../store/user/user.selector";
@@ -37,6 +37,9 @@ export function MobileNavLinks(props) {
 
   const currentUser = useSelector(selectCurrentUser);
   const isCartOpen = useSelector(selectIsCartOpen);
+  const dispatch = useDispatch();
+
+  const signOutUser = () => dispatch(signOutStart());
 
   return (
     <Fragment>

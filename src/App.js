@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { Route, Routes } from "react-router-dom";
-import { getCurrentUser } from "./utils/firebase/firebase.utils";
 
 import Home from "./routes/home/home.component";
 import Navigation from "./routes/navigation/navigation.component";
