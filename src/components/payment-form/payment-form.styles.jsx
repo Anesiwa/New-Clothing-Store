@@ -8,6 +8,9 @@ export const PaymentFormContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 2px solid #000;
+  padding: 30px;
+  margin: 25px;
 `;
 
 export const FormContainer = styled.form`
