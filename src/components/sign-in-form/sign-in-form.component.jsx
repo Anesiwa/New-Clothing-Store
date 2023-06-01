@@ -12,7 +12,7 @@ import {
 import {
   SignInFormContainer,
   SignInFormButtonContainer,
-} from "./sign-in-form.styles.js";
+} from "./sign-in-form.styles";
 
 const defaultFormFields = {
   email: "",

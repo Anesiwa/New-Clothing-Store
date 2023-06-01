@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router";
+import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 
 import { selectCartItems } from "../../store/cart/cart.selector";
@@ -9,9 +9,9 @@ import {
   CartDropdownContainer,
   EmptyMessage,
   CartItems,
-} from "./cart-dropdown.styles.js";
+} from "./cart-dropdown.styles";
 
-export default function CartDropDown() {
+const CartDropDown = () => {
   const cartItems = useSelector(selectCartItems);
   const navigate = useNavigate();
 
@@ -31,4 +31,6 @@ export default function CartDropDown() {
       <Button onClick={goToCheckoutHandler}>CHECKOUT</Button>
     </CartDropdownContainer>
   );
-}
+};
+
+export default CartDropDown;
