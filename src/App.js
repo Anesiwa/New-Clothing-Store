@@ -21,7 +21,7 @@ const App = () => {
       <Navigation />
       <div className="container">
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path="/auth" element={<Authentication />} />
           <Route path="/shop/*" element={<Shop />} />
           <Route path="/checkout" element={<Checkout />} />
