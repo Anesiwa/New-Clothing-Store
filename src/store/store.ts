@@ -40,14 +40,17 @@ const composeEnhancer =
     window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__) ||
   compose;
 
-const composedEnhancers = composeEnhancer(applyMiddleware(...middleWares));
+export const composedEnhancers = composeEnhancer(
+  applyMiddleware(...middleWares)
+);
 
 export const store = configureStore({
   reducer: persistedReducer,
-  middleware: [sagaMiddleware, logger],
-  enhancers: [composedEnhancers],
+  middleware: (middleWares) => middleWares().concat(logger),
+  enhancers: (defaultEnhancers) => {
+    return [...defaultEnhancers, composedEnhancers];
+  },
 });
 
 sagaMiddleware.run(rootSaga);
-
 export const persistor = persistStore(store);
